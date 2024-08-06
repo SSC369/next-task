@@ -1,0 +1,166 @@
+/* Container Styles */
+.container {
+  background-color: #ffffff;
+  min-height: 100dvh;
+  background-color: var(--bg1);
+  display: flex;
+  min-width: 300px;
+  flex-direction: column;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121;
+  color: white;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 10px;
+    margin-top: 20px;
+    align-self: center;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 500 !important;
+}
+
+.emptyHeading {
+  font-size: 24px;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .emptyHeading {
+    font-size: 30px;
+  }
+}
+
+.addTask {
+  font-size: 14px;
+}
+
+.emptyViewContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tasksContainer {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.tasksContainer h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.tasks {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.task {
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--bg1);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.taskTitle {
+  font-size: 14px;
+  width: fit-content;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+.desc {
+  font-size: 12px;
+  background-color: rgb(230, 227, 227);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .tasks {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .task {
+    width: fit-content;
+  }
+  .taskTitle {
+    font-size: 16px;
+  }
+  .desc {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.checkbox {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.deleteIcon {
+  cursor: pointer;
+}
+.deleteIcon:hover {
+  color: red;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .addTask {
+    font-size: 16px;
+  }
+}
