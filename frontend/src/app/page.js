@@ -25,12 +25,6 @@ const Page = () => {
   const router = useRouter();
 
   const taskToken = Cookies.get("taskToken");
-  useEffect(() => {
-    const taskToken = Cookies.get("taskToken");
-    if (!taskToken) {
-      router.replace("/login");
-    }
-  }, []);
 
   const fetcher = async (url) => {
     try {
