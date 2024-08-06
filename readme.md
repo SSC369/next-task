@@ -2,7 +2,7 @@ Hosted Application URL = https://next-task-three.vercel.app
 
 Here's a `README.md` file for your To-Do application:
 
-```markdown
+````markdown
 # Full-Stack To-Do Application
 
 This is a full-stack To-Do application built using MongoDB, Express.js, Node.js, and Next.js. The application allows users to register, log in, and manage their tasks with features such as adding, updating, deleting, and marking tasks as completed. The application also supports task filtering and pagination.
@@ -48,38 +48,13 @@ This is a full-stack To-Do application built using MongoDB, Express.js, Node.js,
 - CSS modules or styled-components for styling
 - Client-side and server-side rendering as needed
 
-## Project Structure
-
-### Backend
-```
-
-backend/
-│ ├── models/ # Mongoose schemas for users and tasks
-│ ├── routes/ # Express routes for API endpoints
-│ ├── controllers/ # Controller functions for handling API logic
-│ ├── middlewares/ # Middleware for authentication and validation
-│ ├── config/ # Configuration files (e.g., database connection)
-│ ├── server.js # Entry point for the Node.js server
-
-```
-
-### Frontend
-```
-
-frontend/
-│ ├── pages/ # Next.js pages for registration, login, and task management
-│ ├── components/ # Reusable React components
-│ ├── styles/ # CSS modules or styled-components
-│ ├── next.config.js # Next.js configuration
-│ ├── package.json # Frontend dependencies and scripts
-
-````
-
 ## Setup and Installation
 
 1. Clone the repository:
+
 ```sh
 git clone https://github.com/your-username/todo-app.git
+```
 ````
 
 2. Navigate to the backend directory and install dependencies:
